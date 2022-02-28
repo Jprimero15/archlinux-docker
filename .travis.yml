@@ -8,6 +8,6 @@ services:
   - docker
 
 script:
-  - docker build -f Dockerfile . -t panchajanya1999/archlinux:latest
-  - echo "$password" | docker login -u "panchajanya1999" --password-stdin
-  - docker push panchajanya1999/archlinux:latest
+  - docker build -f Dockerfile . -t jprimero15/archlinux-docker:latest
+  - echo "$DOCKER_TOKEN" | docker login -u "jprimero15" --password-stdin
+  - docker push jprimero15/archlinux-docker:latest
