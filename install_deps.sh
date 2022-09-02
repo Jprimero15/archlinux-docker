@@ -14,7 +14,8 @@ pacman -S --noconfirm \
                  inetutils python2 lld llvm base-devel\
                  clang bc ccache multilib-devel glibc z3 \
                  sudo jdk8-openjdk bison cmake flex libelf cpio unzip dpkg \
-                 ninja openssl python3 uboot-tools neofetch ncurses
+                 ninja openssl python3 uboot-tools neofetch ncurses \
+                 aarch64-linux-gnu-binutils arm-none-eabi-binutils
 
 # Fix pod2man missing error
 export PATH=/usr/bin/core_perl:$PATH
