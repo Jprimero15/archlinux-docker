@@ -12,12 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    
+
     steps:
     - name: Check Out v4
       uses: actions/checkout@v4
 
-    - name: Configure builder
+    - name: Build docker
       env:
         DOCKER_TOKEN: ${{ secrets.DOCKER_TOKEN }}
       shell: bash
