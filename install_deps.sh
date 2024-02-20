@@ -9,13 +9,13 @@ pacman -Syyu --noconfirm
 
 # Install basic packages
 pacman -S --noconfirm \
-                 wget nano asp github-cli kmod libelf pahole xmlto \
-                 python-sphinx python-sphinx_rtd_theme graphviz imagemagick \
+                 wget nano asp kmod libelf pahole xmlto \          
                  cmake svn lzip git make patchelf zip \
-                 inetutils lld llvm base-devel\
+                 inetutils base-devel neofetch ncurses \
                  clang bc ccache multilib-devel glibc z3 \
-                 sudo jdk8-openjdk bison cmake flex libelf cpio unzip dpkg \
-                 ninja openssl python3 uboot-tools neofetch ncurses
+                 sudo bison cmake flex libelf cpio \
+                 ninja openssl python3 dpkg unzip \
+                 aarch64-linux-gnu-gcc arm-none-eabi-binutils
 
 # Fix pod2man missing error
 export PATH=/usr/bin/core_perl:$PATH
