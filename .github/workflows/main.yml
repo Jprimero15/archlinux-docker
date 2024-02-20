@@ -1,12 +1,27 @@
-name: Github-Actions
+name: Archlinux docker builder
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - master
+
+  workflow_dispatch:
 
 jobs:
-  ci-test:
+  build:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
+    
     steps:
-    - uses: actions/checkout@v1
-    - name: make ci-test
-      run: make ci-test
+    - name: Check Out v4
+      uses: actions/checkout@v4
+
+    - name: Configure builder
+      env:
+        DOCKER_TOKEN: ${{ secrets.DOCKER_TOKEN }}
+      shell: bash
+      run: |
+         docker build -f Dockerfile . -t jprimero15/archlinux-docker:latest
+         echo "$DOCKER_TOKEN" | docker login -u "jprimero15" --password-stdin
+         docker push jprimero15/archlinux-docker:latest
