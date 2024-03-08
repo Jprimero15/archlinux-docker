@@ -14,7 +14,7 @@ pacman -S --noconfirm \
                  inetutils base-devel neofetch ncurses \
                  clang bc ccache glibc z3 sudo \
                  bison cmake flex libelf cpio \
-                 ninja openssl python3 dpkg unzip \
+                 ninja openssl python3 dpkg unzip git-lfs \
                  aarch64-linux-gnu-gcc arm-none-eabi-binutils
 
 # Fix pod2man missing error
