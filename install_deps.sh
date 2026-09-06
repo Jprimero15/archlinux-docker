@@ -11,7 +11,7 @@ pacman -Syyu --noconfirm
 pacman -S --noconfirm \
                  wget nano kmod libelf pahole xmlto \
                  svn lzip git make patchelf zip \
-                 inetutils base-devel neofetch ncurses \
+                 inetutils base-devel fastfetch ncurses \
                  clang bc ccache glibc z3 sudo \
                  bison cmake flex libelf cpio \
                  ninja openssl python3 dpkg unzip git-lfs \
