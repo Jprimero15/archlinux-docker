@@ -15,7 +15,7 @@ pacman -S --noconfirm \
                  clang bc ccache glibc z3 sudo \
                  bison cmake flex libelf cpio \
                  ninja openssl python3 dpkg unzip git-lfs \
-                 aarch64-linux-gnu-gcc arm-none-eabi-binutils
+                 aarch64-linux-gnu-gcc arm-none-eabi-binutils zstd
 
 # Fix pod2man missing error
 export PATH=/usr/bin/core_perl:$PATH
