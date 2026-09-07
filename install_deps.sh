@@ -13,7 +13,7 @@ pacman -S --noconfirm \
                  svn lzip git make patchelf zip \
                  inetutils base-devel fastfetch ncurses \
                  clang bc ccache glibc z3 sudo \
-                 bison cmake flex libelf cpio \
+                 bison cmake flex libelf cpio lld llvm \
                  ninja openssl python3 dpkg unzip git-lfs \
                  aarch64-linux-gnu-gcc arm-none-eabi-binutils zstd
 
